@@ -13,7 +13,7 @@ BARCODE_PKG = ""
 
 MULTIMEDIA = ""
 
-#    ${@['','qt-opencv-opencl-opengl-multithreaded-dev'][oe.utils.all_distro_features(d, 'opencv opencl opengl', True, False) and bb.utils.contains('MACHINE_FEATURES', 'gpu dsp', True, False, d)]}
+#    ${@['','qt-opencv-opencl-opengl-multithreaded-dev'][oe.utils.all_distro_features(d, 'opencv opencl opengl', True, False) and bb.utils.contains('MACHINE_FEATURES', 'dsp', True, False, d)]}
 MULTIMEDIA:append:dra7xx = " \
     hevc-arm-decoder-dev \
     hevc-arm-decoder-staticdev \
